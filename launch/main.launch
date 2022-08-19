@@ -1,0 +1,7 @@
+<!-- Launches all relevant scripts for human following -->
+
+<launch>
+    <include file="$(find turtlebot_bringup)/launch/minimal.launch" />
+    <node type="estop.py" name="estop" pkg="hot_chocolate" output="screen"/>
+    <node type="main.py" name="main" pkg="hot_chocolate" output="screen"/>
+</launch>
